@@ -24,7 +24,7 @@ public class TestActivity extends AppCompatActivity {
     private Button submitButton;
     private CountDownTimer countDownTimer;
 
-    private String userName, userAge;
+    private String userName, userid;
     private ArrayList<Question> questions;
     private int currentQuestionIndex = 0;
     private int score = 0;
@@ -39,7 +39,7 @@ public class TestActivity extends AppCompatActivity {
         // Get data from MainActivity
         Intent intent = getIntent();
         userName = intent.getStringExtra("name");
-        userAge = intent.getStringExtra("age");
+        userid = intent.getStringExtra("id");
 
         // Initialize UI elements
         questionText = findViewById(R.id.questionText);

@@ -22,6 +22,6 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish(); // Finish SplashActivity so it's not in the back stack
             }
-        }, 2000); // 2000 milliseconds = 2 seconds
+        }, 5000); // 2000 milliseconds = 2 seconds
     }
 }

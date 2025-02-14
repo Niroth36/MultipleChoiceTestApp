@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         enterName = findViewById(R.id.enterName);
-        enterAge = findViewById(R.id.enterAge);
+        enterAge = findViewById(R.id.enterid);
         startTestButton = findViewById(R.id.startTestButton);
         historyButton = findViewById(R.id.historyButton);
 
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 String age = enterAge.getText().toString().trim();
 
                 if (name.isEmpty() || age.isEmpty()) {
-                    Toast.makeText(MainActivity.this, "Please enter name and age", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please enter name and id", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
